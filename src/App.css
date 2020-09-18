@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.Appcontent {
+  width: 80%;
+  height: 250px;
+  background-color: red;
+}

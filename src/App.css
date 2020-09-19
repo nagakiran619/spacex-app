@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,10 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.App {
+  background-color: #f2f2f2;
+  display: inline-block;
 }
-
-.Appcontent {
-  width: 80%;
+.App-main {
+  width: 100%;
   height: 250px;
-  background-color: red;
+  position: relative;
+}
+.App-sidebar {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+.App-content {
+  width: 75%;
+  float: right;
 }

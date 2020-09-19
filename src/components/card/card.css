@@ -1,0 +1,11 @@
+.Card {
+  width: 49.65%;
+  background-color: lightgray;
+  border: 1px solid #000;
+  float: left;
+}
+
+.Card-img {
+  width: 250px;
+  height: 250px;
+}

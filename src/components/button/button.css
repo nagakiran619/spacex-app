@@ -1,0 +1,18 @@
+.button {
+  padding: 5px;
+  margin: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.button-success {
+  background-color: #c5e09c;
+  border-radius: 3px;
+  color: #3c4726;
+  border-color: transparent;
+}
+.button-highlight {
+  background-color: #7bbb00;
+  border-radius: 3px;
+  color: #3c4726;
+  border-color: transparent;
+}

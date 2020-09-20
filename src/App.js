@@ -39,10 +39,7 @@ class App extends Component {
       ()
       .then(
         (response) => {
-          console.log(response.data);
-
           this.setState({ carddata: response.data });
-          console.log(this.state);
         },
         (err) => {
           if (err) console.log("Error in making api call");
@@ -52,7 +49,6 @@ class App extends Component {
 
   onClickYearHandler = (e, year, id) => {
     e.preventDefault();
-    console.log(year);
 
     /// MAKDING THE FILTER ACTIVE STATE
     let yearHighlight = this.state.FILTER_YEAR_VALUES.map((v, idx) => {
@@ -66,7 +62,6 @@ class App extends Component {
         (response) => {
           this.setState({ carddata: response.data });
           this.setState({ FILTER_YEAR_VALUES: yearHighlight });
-          console.log(this.state);
         },
         (err) => {
           console.log(err);
@@ -91,7 +86,6 @@ class App extends Component {
         (response) => {
           this.setState({ carddata: response.data });
           this.setState({ FILTER_SUCCESSFUL_LAUNCH: launchHighlight });
-          console.log(this.state);
         },
         (err) => {
           console.log(err);

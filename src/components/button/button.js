@@ -3,7 +3,6 @@ import React from "react";
 import "../button/button.css";
 
 const button = (props) => {
-  console.log(props);
   const btnClass = props.isHighlighted
     ? "button button-success button-highlight"
     : "button button-success ";

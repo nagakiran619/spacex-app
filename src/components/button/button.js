@@ -3,7 +3,16 @@ import React from "react";
 import "../button/button.css";
 
 const button = (props) => {
-  return <button className="button button-success"> {props.name} </button>;
+  console.log(props);
+  const btnClass = props.isHighlighted
+    ? "button button-success button-highlight"
+    : "button button-success ";
+  return (
+    <button className={btnClass} onClick={props.click}>
+      {" "}
+      {props.year || props.value}{" "}
+    </button>
+  );
 };
 
 export default button;

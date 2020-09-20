@@ -1,56 +1,89 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-.App {
+body {
   background-color: #f2f2f2;
-  display: inline-block;
+}
+.App {
+  margin: 0 auto;
+  width: 95%;
 }
 .App-main {
   width: 100%;
-  height: 250px;
   position: relative;
+  background-color: #f2f2f2;
+  display: inline-block;
 }
 .App-sidebar {
-  width: 25%;
+  width: 16%;
   float: left;
-  padding: 10px;
+  padding: 0px 5px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .App-content {
-  width: 75%;
+  width: 80%;
   float: right;
+  padding: 0px 10px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.App-sidebar-section {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.App-sidebar-header {
+  color: #000;
+  margin: 0;
+}
+.App-sidebar-item-header {
+  color: #000;
+  margin: 0px 10%;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  padding-bottom: 0.8rem;
+  font-weight: normal;
+}
+.App-sidebar-item-list {
+  padding: 0.5rem 1rem;
+}
+.App-clear {
+  clear: both;
+}
+
+/* MEDIA QUERIES FOR DESKTOP, TABLET AND MOBILE MODE */
+/* MOBILE MODE */
+@media (max-width: 700px) and (max-device-width: 700px) {
+  .App-sidebar {
+    width: 100%;
+  }
+}
+/* TABLET MODE */
+@media (min-width: 700px) and (max-width: 1024px) and (min-device-width: 700px) and (max-device-width: 1024px) {
+  .App {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .App-content {
+    width: 79%;
+  }
+  .App-sidebar-item-header {
+    color: #000;
+    margin: 0px;
+  }
+  .App-sidebar-item-list {
+    padding: 0px;
+    text-align: center;
+  }
+  .App-sidebar-section {
+    margin: 5px 0;
+  }
+}
+/* DESKTOP MODE */
+@media (min-width: 1024px) and (max-width: 1440px) and (min-device-width: 1024px) and (max-device-width: 1440px) {
 }

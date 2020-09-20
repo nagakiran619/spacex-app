@@ -3,6 +3,13 @@
   margin: 5px;
   text-transform: capitalize;
   font-weight: bold;
+  outline: none;
+  box-shadow: none;
+  width: 37.5%;
+  float: left;
+}
+button:nth-child(2n) {
+  float: right;
 }
 .button-success {
   background-color: #c5e09c;
@@ -15,4 +22,23 @@
   border-radius: 3px;
   color: #3c4726;
   border-color: transparent;
+}
+.btn-year:focus,
+.btn-landing:focus,
+.btn-launch:focus {
+  background-color: #7bbb00;
+}
+
+/* MEDIA QUERIES FOR DESKTOP, TABLET AND MOBILE MODE */
+/* MOBILE MODE */
+@media (max-width: 700px) {
+}
+/* TABLET MODE */
+@media (min-width: 700px) and (max-width: 1024px) {
+  .button {
+    width: 40%;
+  }
+}
+/* DESKTOP MODE */
+@media (min-width: 1024px) and (max-width: 1440px) {
 }

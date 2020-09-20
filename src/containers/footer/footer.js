@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="Footer">
-        <h1>Developed by: {DEVELOPER_NAME} </h1>
+        <h4>Developed by: {DEVELOPER_NAME} </h4>
       </footer>
     );
   }

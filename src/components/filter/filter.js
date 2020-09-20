@@ -20,10 +20,10 @@ const Filters = (props) => {
       });
       return filtervalue;
     case FILTER_TYPE_LAUNCH:
-      filtervalue = FILTER_SUCCESSFUL_LAUNCH.map((val, ind) => {
-        return <Button key={val.value} name={val.value} />;
-      });
-      return filtervalue;
+      // filtervalue = FILTER_SUCCESSFUL_LAUNCH.map((val, ind) => {
+      return <Button click={props.click} name={props.value} />;
+    // });
+    // return filtervalue;
     case FILTER_TYPE_LANDING:
       filtervalue = FILTER_SUCCESSFUL_LANDING.map((val, ind) => {
         return <Button key={val.value} name={val.value} />;

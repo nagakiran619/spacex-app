@@ -1,5 +1,5 @@
 export const DEVELOPER_NAME = "Naga Kiran Kumar .M";
-export const RECORD_LIMIT = 10;
+export const RECORD_LIMIT = 100;
 
 export const FILTER_TYPE_YEAR = "YEAR";
 export const FILTER_TYPE_LAUNCH = "SUCCESSFUL_LAUNCH";
